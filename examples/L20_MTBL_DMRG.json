@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "title": "L20 MTBL 与 DMRG 示例模板",
+  "grid": [
+    "1",
+    "2",
+    "0.5"
+  ],
+  "common": {
+    "t1": 1.0,
+    "ratio": 0.4,
+    "dimer": 1,
+    "nbar": 0.5,
+    "L": 0,
+    "N": -1,
+    "dataset": "psi",
+    "bulk_left": 0,
+    "bulk_right": 0,
+    "string_left": 0,
+    "string_right": 0,
+    "cut": 0,
+    "max_order": 6,
+    "entropy_coarse": 1e-09,
+    "entropy_fine": 1e-10,
+    "memory_mb": 1024,
+    "blas_threads": 1
+  },
+  "groups": [
+    {
+      "id": "0b2d84487e724b14a9379ac2eec336f9",
+      "name": "MTBL",
+      "color": "#2166ac",
+      "style": "-",
+      "notes": "U=1、1.5、2；请按顺序导入自己的波函数",
+      "grid": null,
+      "params": {},
+      "files": {},
+      "pending": []
+    },
+    {
+      "id": "9e4aae7655f5482fab1bb31c46b9e6d3",
+      "name": "DMRG",
+      "color": "#d55e00",
+      "style": "--",
+      "notes": "U=1、1.5、2；请按顺序导入自己的波函数",
+      "grid": null,
+      "params": {},
+      "files": {},
+      "pending": []
+    }
+  ],
+  "reference": "0b2d84487e724b14a9379ac2eec336f9",
+  "observables": [
+    "half_chain_entropy",
+    "entanglement_gap",
+    "string_order",
+    "kappa2",
+    "fidelity"
+  ]
+}
